@@ -1,7 +1,7 @@
 <template>
-  <ul>
+  <ul class="bg-black text-white">
     <li v-for="{ path, name } in menu" :key="path">
-      <a :href="path">{{ name }}</a>
+      <NuxtLink :to="path">{{ name }}</NuxtLink>
     </li>
   </ul>
 </template>
@@ -11,7 +11,13 @@
 const menu = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
-  { name: 'Movies', path: '/movies' },
+  { name: 'Movies', path: '/movies' }
 ]
 
 </script>
+
+<style scoped>
+.router-link-exact-active {
+  @apply text-primary;
+}
+</style>
