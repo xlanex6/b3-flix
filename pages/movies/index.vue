@@ -9,11 +9,19 @@
       }}</button>
 
   </div>
-  <div class="scroll-ml-6 snap-x flex space-x-2 overflow-x-auto py-4">
-
+  <p class="text-snow">News</p>
+  <Wrapper display="carrousel">
     <MoviesCard :movie="movie" v-for="movie in movies" />
+  </Wrapper>
+  <p class="text-snow">cinema</p>
+  <Wrapper display="grid">
+    <MoviesCard :movie="movie" v-for="movie in movies" />
+  </Wrapper>
+  <Wrapper display="list">
+    <MoviesCard :movie="movie" v-for="movie in movies" />
+  </Wrapper>
 
-  </div>
+
 </template>
 
 <script setup>

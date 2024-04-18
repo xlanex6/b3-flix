@@ -17,7 +17,7 @@ const menu = [
 </script>
 
 <style scoped>
-.router-link-exact-active {
+.router-link-active {
   @apply text-primary;
 }
 </style>
