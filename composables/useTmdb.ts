@@ -16,6 +16,12 @@ export const useTmdb = () => {
     return response.results
   }
 
+  async function getMovieById(id, append) {
+    const response = await $fetch(urlBase + `/movie/` + id + queryParams + `&append_to_response
+=${append}`, options);
+    return response
+  }
 
-  return { getMovies }
+
+  return { getMovies, getMovieById }
 }

@@ -9,10 +9,10 @@
       }}</button>
 
   </div>
-  <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-2 px-4">
+  <div class="scroll-ml-6 snap-x flex space-x-2 overflow-x-auto py-4">
 
     <MoviesCard :movie="movie" v-for="movie in movies" />
-    
+
   </div>
 </template>
 
@@ -20,6 +20,8 @@
 
 
 const { getMovies } = useTmdb()
+
+
 
 const movies = ref([]);
 

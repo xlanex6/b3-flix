@@ -6,5 +6,8 @@ export default defineNuxtConfig({
     public: {
       tmdbKey: ''
     }
+  },
+  experimental: {
+    viewTransition: true
   }
 })
