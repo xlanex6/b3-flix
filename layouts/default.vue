@@ -1,6 +1,8 @@
 <template>
-  <Navbar />
-  <slot />
+  <div class="bg-black min-h-screen">
+    <Navbar />
+    <slot />
+  </div>
 </template>
 
 <script setup>

@@ -1,5 +1,5 @@
 <template>
-  <ul class="bg-black text-white">
+  <ul class="bg-black text-white inline-flex space-x-4 px-4 py-2">
     <li v-for="{ path, name } in menu" :key="path">
       <NuxtLink :to="path">{{ name }}</NuxtLink>
     </li>
