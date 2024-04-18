@@ -13,11 +13,15 @@
 <script setup>
 
 
-const { getNowPlayingMovies } = useTmdb()
+const { getMovies } = useTmdb()
 
 const movies = ref([]);
 
+const menu = ["upcoming", "popular", "top_rated", "now_playing"]
 
-movies.value = await getNowPlayingMovies()
+
+
+movies.value = await getMovies('upcoming')
+
 
 </script>
